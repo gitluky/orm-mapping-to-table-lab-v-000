@@ -15,7 +15,9 @@ class Student
 
   end
 
+  def self.drop_table
 
+  end
 
   def initialize(name, grade, id=nil)
     @name = name
