@@ -9,10 +9,12 @@ class Student
         grade INTEGER
       )
     SQL
-    
+
     DB[:conn].execute(sql)
-    
+
   end
+
+
 
   def initialize(name, grade, id=nil)
     @name = name
@@ -28,6 +30,8 @@ class Student
     SQL
 
     DB[:conn].execute(sql, self.name, self.grade)
+
+    self
 
   end
 
